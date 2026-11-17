@@ -8,6 +8,6 @@
     { "src": "/build/(.*)", "dest": "/public/build/$1" },
     { "src": "/css/(.*)", "dest": "/public/css/$1" },
     { "src": "/js/(.*)", "dest": "/public/js/$1" },
-    { "src": "/(.*)", "dest": "/vercel/index.php" }
+    { "src": "^(.*)$", "dest": "/vercel/index.php?__vercel_path=$1" }
   ]
 }
